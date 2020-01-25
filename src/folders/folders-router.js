@@ -70,7 +70,6 @@ foldersRouter
         FoldersService.deleteFolder(
             req.app.get('db'),
             req.params.folder_id,
-            folderToUpdate
         )
             .then(numRowsAffected => {
                 res.status(204).end()
